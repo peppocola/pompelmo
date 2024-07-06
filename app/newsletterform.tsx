@@ -18,6 +18,10 @@ const NewsletterForm = ({
   const subscribe = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
+    if (!inputEl.current || !inputEl.current.value) {
+      return; // Do nothing if input is empty or inputEl is null
+    }
+
     const res = await fetch(apiUrl, {
       body: JSON.stringify({
         email: inputEl.current.value,
