@@ -1,3 +1,4 @@
+"use client";
 import React, { useRef, useState } from 'react'
 
 export interface NewsletterFormProps {
@@ -6,7 +7,7 @@ export interface NewsletterFormProps {
 }
 
 const NewsletterForm = ({
-  title = 'Iscriviti alla newsletter per ricevere gli ultimi articoli.',
+  title = 'Iscriviti alla newsletter per essere aggiornato sugli ultimi post!',
   apiUrl = '/api/newsletter',
 }: NewsletterFormProps) => {
   const inputEl = useRef<HTMLInputElement>(null)
