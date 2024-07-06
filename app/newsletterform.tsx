@@ -1,4 +1,4 @@
-"use client";
+'use client'
 import React, { useRef, useState } from 'react'
 
 export interface NewsletterFormProps {
@@ -19,7 +19,7 @@ const NewsletterForm = ({
     e.preventDefault()
 
     if (!inputEl.current || !inputEl.current.value) {
-      return; // Do nothing if input is empty or inputEl is null
+      return // Do nothing if input is empty or inputEl is null
     }
 
     const res = await fetch(apiUrl, {
@@ -53,10 +53,10 @@ const NewsletterForm = ({
             <span className="sr-only">Indirizzo email</span>
             <input
               autoComplete="email"
-              className="focus:ring-primary-600 w-72 rounded-md px-4 focus:border-transparent focus:outline-none focus:ring-2 dark:bg-black"
+              className="w-72 rounded-md px-4 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-primary-600 dark:bg-black"
               id="email-input"
               name="email"
-              placeholder={subscribed ? "Ti sei iscritto !  🎉" : 'Inserisci la tua email'}
+              placeholder={subscribed ? 'Ti sei iscritto !  🎉' : 'Inserisci la tua email'}
               ref={inputEl}
               required
               type="email"
@@ -66,9 +66,9 @@ const NewsletterForm = ({
         </div>
         <div className="mt-2 flex w-full rounded-md shadow-sm sm:mt-0 sm:ml-3">
           <button
-            className={`bg-primary-500 w-full rounded-md py-2 px-4 font-medium text-white sm:py-0 ${
+            className={`w-full rounded-md bg-primary-500 px-4 py-2 font-medium text-white sm:py-0 ${
               subscribed ? 'cursor-default' : 'hover:bg-primary-700 dark:hover:bg-primary-400'
-            } focus:ring-primary-600 focus:outline-none focus:ring-2 focus:ring-offset-2 dark:ring-offset-black`}
+            } outline-none focus:ring-2 focus:ring-primary-600 focus:ring-offset-2 dark:ring-offset-black`}
             type="submit"
             disabled={subscribed}
           >
