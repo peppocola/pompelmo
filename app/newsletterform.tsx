@@ -46,14 +46,14 @@ const NewsletterForm = ({
 
   return (
     <div>
-      <div className="pb-1 text-lg font-semibold text-gray-800 dark:text-gray-100">{title}</div>
+      <div className="pb-1 text-lg font-semibold text-gray-800 dark:text-white">{title}</div>
       <form className="flex flex-col sm:flex-row" onSubmit={subscribe}>
         <div>
           <label htmlFor="email-input">
             <span className="sr-only">Indirizzo email</span>
             <input
               autoComplete="email"
-              className="w-72 rounded-md px-4 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-primary-600 dark:bg-black"
+              className="w-72 rounded-md px-4 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-hover-500 dark:bg-stone-900"
               id="email-input"
               name="email"
               placeholder={subscribed ? 'Ti sei iscritto !  🎉' : 'Inserisci la tua email'}
@@ -66,9 +66,9 @@ const NewsletterForm = ({
         </div>
         <div className="mt-2 flex w-full rounded-md shadow-sm sm:mt-0 sm:ml-3">
           <button
-            className={`w-full rounded-md bg-primary-500 px-4 py-2 font-medium text-white sm:py-0 ${
-              subscribed ? 'cursor-default' : 'hover:bg-primary-700 dark:hover:bg-primary-400'
-            } outline-none focus:ring-2 focus:ring-primary-600 focus:ring-offset-2 dark:ring-offset-black`}
+            className={`w-full rounded-md bg-primary-600 px-4 py-2 font-medium text-white sm:py-0 ${
+              subscribed ? 'cursor-default' : 'hover:bg-hover-500 dark:hover:bg-hover-500'
+            } outline-none focus:ring-2 focus:ring-hover-500 focus:ring-offset-2 dark:ring-offset-black`}
             type="submit"
             disabled={subscribed}
           >

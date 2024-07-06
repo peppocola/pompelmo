@@ -56,7 +56,7 @@ const ThemeSwitch = () => {
   return (
     <div className="mr-5">
       <Menu as="div" className="relative inline-block text-left">
-        <div className="hover:text-primary-500 dark:hover:text-primary-400">
+        <div className="hover:text-hover-500 dark:hover:text-hover-500">
           <Menu.Button>
             {mounted ? resolvedTheme === 'dark' ? <Moon /> : <Sun /> : <Blank />}
           </Menu.Button>
@@ -78,7 +78,7 @@ const ThemeSwitch = () => {
                     {({ active }) => (
                       <button
                         className={`${
-                          active ? 'bg-primary-600 text-white' : ''
+                          active ? 'bg-hover-500 text-white' : ''
                         } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                       >
                         <div className="mr-2">
@@ -110,7 +110,7 @@ const ThemeSwitch = () => {
                     {({ active }) => (
                       <button
                         className={`${
-                          active ? 'bg-primary-600 text-white' : ''
+                          active ? 'bg-hover-500 text-white' : ''
                         } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                       >
                         <div className="mr-2">
