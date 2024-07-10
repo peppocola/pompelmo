@@ -6,10 +6,10 @@ const siteMetadata = {
   description: 'Deliri di un dottorando all\'estero',
   language: 'it-IT',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://pompelmo.vercel.app/',
+  siteUrl: 'https://pompelmo.xyz/',
   siteRepo: 'https://github.com/peppocola/pompelmo',
-  siteLogo: '/static/images/logo.png',
-  socialBanner: '/static/images/twitter-card.png',
+  siteLogo: '/static/images/logo.svg',
+  socialBanner: '/static/images/avatar.jpg',
   email: 'giuseppe.colavito@uniba.it',
   github: 'https://github.com/peppocola',
   x: 'https://x.com/colavito_g',
