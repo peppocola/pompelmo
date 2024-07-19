@@ -9,7 +9,7 @@ const siteMetadata = {
   description_short: "Deliri di un dottorando all'estero.",
 
   language: 'it-IT',
-  theme: 'system', // system, dark or light
+  theme: 'dark', // system, dark or light
   siteUrl: 'https://pompelmo.xyz/',
   siteRepo: 'https://github.com/peppocola/pompelmo',
   siteLogo: '/static/images/logo.svg',
