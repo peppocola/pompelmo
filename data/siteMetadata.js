@@ -13,7 +13,7 @@ const siteMetadata = {
   siteUrl: 'https://pompelmo.xyz/',
   siteRepo: 'https://github.com/peppocola/pompelmo',
   siteLogo: '/static/images/logo.svg',
-  socialBanner: '/static/images/pompelmo.xyz.svg',
+  socialBanner: '/static/images/socialBanner.png',
   email: 'giuseppe.colavito@uniba.it',
   github: 'https://github.com/peppocola',
   x: 'https://x.com/colavito_g',
