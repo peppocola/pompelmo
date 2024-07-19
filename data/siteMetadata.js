@@ -2,8 +2,12 @@
 const siteMetadata = {
   title: 'Pompelmo Blog',
   author: 'Giuseppe Colavito',
-  headerTitle: 'Pompelmo Blog',
-  description: 'Deliri di un dottorando all\'estero',
+  headerTitle_short: 'Pompelmo Blog',
+  headerTitle: 'Pompelmo Blog by Giuseppe Colavito',
+  description:
+    'Deliri di un dottorando all\'estero. Segui il viaggio di "PeppoCola" come Visiting Researcher presso il NASA Goddard Space Flight Center a Washington DC',
+  description_short: "Deliri di un dottorando all'estero.",
+
   language: 'it-IT',
   theme: 'system', // system, dark or light
   siteUrl: 'https://pompelmo.xyz/',
