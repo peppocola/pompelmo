@@ -81,8 +81,10 @@ const NewsletterForm = ({
       )}
       {subscribed && (
         <div className="w-96 pt-2 text-sm text-green-500 dark:text-green-400 sm:w-96">
-          La prima newsletter è in arrivo! 🚀 Controlla la tua casella spam se non la trovi. E
-          aggiungi peppocola@pompelmo.xyz ai tuoi contatti per non perderla!
+          La prima newsletter è in arrivo!🚀
+          <br />
+          Controlla la tua casella spam se non la trovi.
+          <br />E aggiungi peppocola@pompelmo.xyz ai tuoi contatti per non perderla!
         </div>
       )}
     </div>
