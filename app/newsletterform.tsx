@@ -64,7 +64,7 @@ const NewsletterForm = ({
             />
           </label>
         </div>
-        <div className="mt-2 flex w-full rounded-md shadow-sm sm:mt-0 sm:ml-3">
+        <div className="mt-2 flex w-full rounded-md shadow-sm sm:ml-3 sm:mt-0">
           <button
             className={`w-full rounded-md bg-primary-600 px-4 py-2 font-medium text-white sm:py-0 ${
               subscribed ? 'cursor-default' : 'hover:bg-hover-500 dark:hover:bg-hover-500'
@@ -78,6 +78,12 @@ const NewsletterForm = ({
       </form>
       {error && (
         <div className="w-72 pt-2 text-sm text-red-500 dark:text-red-400 sm:w-96">{message}</div>
+      )}
+      {subscribed && (
+        <div className="w-72 pt-2 text-sm text-green-500 dark:text-green-400 sm:w-96">
+          La prima newsletter è in arrivo! 🚀 Controlla la tua casella spam se non la trovi. E
+          aggiungi peppocola@pompelmo.xyz ai tuoi contatti per non perderla!
+        </div>
       )}
     </div>
   )
