@@ -35,7 +35,7 @@ const NewsletterForm = ({
     const { error } = await res.json()
     if (error) {
       setError(true)
-      setMessage('La tua email non è valida o sei già iscritto.')
+      setMessage('La tua email non è valida o sei già iscrittooooooooooo.')
       return
     }
 
@@ -77,10 +77,10 @@ const NewsletterForm = ({
         </div>
       </form>
       {error && (
-        <div className="w-72 pt-2 text-sm text-red-500 dark:text-red-400 sm:w-96">{message}</div>
+        <div className="w-96 pt-2 text-sm text-red-500 dark:text-red-400 sm:w-96">{message}</div>
       )}
       {subscribed && (
-        <div className="w-72 pt-2 text-sm text-green-500 dark:text-green-400 sm:w-96">
+        <div className="w-96 pt-2 text-sm text-green-500 dark:text-green-400 sm:w-96">
           La prima newsletter è in arrivo! 🚀 Controlla la tua casella spam se non la trovi. E
           aggiungi peppocola@pompelmo.xyz ai tuoi contatti per non perderla!
         </div>
