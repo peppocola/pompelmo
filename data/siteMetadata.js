@@ -5,8 +5,8 @@ const siteMetadata = {
   headerTitle_short: 'Pompelmo Blog',
   headerTitle: 'Pompelmo Blog by Giuseppe Colavito',
   description:
-    'Deliri di un dottorando all\'estero. Segui il viaggio di "PeppoCola" come Visiting Researcher presso il NASA Goddard Space Flight Center a Washington DC',
-  description_short: "Deliri di un dottorando all'estero.",
+    'Deliri di un gravinese alla NASA. Segui il viaggio di "PeppoCola" come Visiting Researcher presso il NASA Goddard Space Flight Center a Washington DC',
+  description_short: "Deliri di un gravinese alla NASA.",
 
   language: 'it-IT',
   theme: 'dark', // system, dark or light
