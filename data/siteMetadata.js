@@ -4,13 +4,12 @@ const siteMetadata = {
   author: 'Giuseppe Colavito',
   headerTitle_short: 'Pompelmo Blog',
   headerTitle: 'Pompelmo Blog by Giuseppe Colavito',
-  description:
-    'Deliri di un gravinese alla NASA. Segui il viaggio di "PeppoCola" come Visiting Researcher presso il NASA Goddard Space Flight Center a Washington DC',
-  description_short: "Deliri di un gravinese alla NASA.",
+  description: 'Entra nel vuoto con me.',
+  description_short: 'Nel vuoto oscuro che mi porto dentro.',
 
   language: 'it-IT',
   theme: 'dark', // system, dark or light
-  siteUrl: 'https://pompelmo.xyz/',
+  siteUrl: 'https://peppocola.github.io/pompelmo/',
   siteRepo: 'https://github.com/peppocola/pompelmo',
   siteLogo: '/static/images/logo.svg',
   socialBanner: '/static/images/socialBanner.png',
