@@ -5,6 +5,7 @@ import { formatDate } from 'pliny/utils/formatDate'
 import NewsletterForm from './newsletterform'
 
 const MAX_DISPLAY = 10
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
 
 export default function Home({ posts }) {
   return (
@@ -12,7 +13,7 @@ export default function Home({ posts }) {
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pb-8 pt-6 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            Gli ultimi
+            Entra con me
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
             {siteMetadata.description_short}
@@ -30,7 +31,7 @@ export default function Home({ posts }) {
                     {images && images.length > 0 && (
                       <div className="xl:col-span-1 xl:row-start-1 xl:self-start">
                         <img
-                          src={images[0]}
+                          src={images[0].startsWith('/') ? `${basePath}${images[0]}` : images[0]}
                           alt={`Anteprima di ${title}`}
                           className="h-40 w-full rounded-lg object-cover"
                         />
